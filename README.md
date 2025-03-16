@@ -1,65 +1,54 @@
-CPU Scheduling Simulator
+# CPU Scheduling Simulator
 
-Description
+## Description
 
 This project simulates four CPU scheduling algorithms:
+- First-Come, First-Served (FCFS)
+- Shortest-Job-First (SJF)
+- Shortest-Remaining-Time (SRT)
+- Round Robin (RR)
 
-First-Come, First-Served (FCFS)
+The simulator takes user input for processes, including process ID, arrival time, and burst time. It displays the Gantt chart, waiting times, turnaround times, and calculates the average waiting and turnaround times.
 
-Shortest-Job-First (SJF)
+## How to Run the Program
 
-Shortest-Remaining-Time (SRT)
+### Prerequisites
+- Python 3 installed on your system.
 
-Round Robin (RR)
+### Steps
 
-The simulator takes user input for processes, including process ID, arrival time, and burst time. It displays the Gantt chart, waiting times, turnaround times, and calculates the average waiting and turnaround times for each algorithm.
-
-How to Run the Program
-
-Prerequisites
-
-Python 3 installed on your system.
-
-Steps
-
-Clone the Repository:
-
-git clone <repository_url>
+#### Clone the Repository
+```sh
+git clone <https://github.com/sonnevaly/CPU-Scheduling-Simulator.git>
 cd CPU-Scheduling-Simulator
+```
 
-Run the Program:
-
+#### Run the Program
+```sh
 python cpu_scheduling_simulator.py
+```
 
-Select an Algorithm:
+#### Select an Algorithm
 The program will prompt you to select from the following options:
+1. First-Come, First-Served (FCFS)
+2. Shortest-Job-First (SJF)
+3. Shortest-Remaining-Time (SRT)
+4. Round Robin (RR)
+5. Exit
 
-1: First-Come, First-Served (FCFS)
-
-2: Shortest-Job-First (SJF)
-
-3: Shortest-Remaining-Time (SRT)
-
-4: Round Robin (RR)
-
-5: Exit
-
-Enter Process Data:
+#### Enter Process Data
 For each process, enter:
+- **Process ID** (e.g., P1, P2)
+- **Arrival Time**
+- **Burst Time**
 
-Process ID (e.g., P1, P2)
+For Round Robin: Enter the Time Quantum.
 
-Arrival Time
-
-Burst Time
-
-For Round Robin: Enter the Time Quantum
-
-View Results:
+#### View Results
 The program outputs the Gantt chart, waiting times, turnaround times, and average statistics.
 
-Example Run
-
+## Example Run
+```
 Select an algorithm (1-5): 1
 Enter number of processes: 3
 Enter Process ID for P1: P1
@@ -77,10 +66,9 @@ Waiting Times: [0, 3, 4]
 Turnaround Times: [5, 6, 10]
 Average Waiting Time: 2.33
 Average Turnaround Time: 7.0
+```
 
-Notes
-
-Error handling: The program ensures invalid inputs like negative numbers or non-integer values are caught and prompts the user to re-enter valid data.
+## Notes
+- **Error handling**: The program ensures invalid inputs like negative numbers or non-integer values are caught and prompts the user to re-enter valid data.
 
 Happy scheduling!
-
