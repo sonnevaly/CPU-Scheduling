@@ -25,7 +25,7 @@ cd CPU-Scheduling-Simulator
 
 #### Run the Program
 ```sh
-python cpu_scheduling_simulator.py
+python CPUScheduling.py
 ```
 
 #### Select an Algorithm
